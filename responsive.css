@@ -1,0 +1,62 @@
+@media (max-width: 991.98px) {
+    .view-toggle {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .view-toggle .btn {
+        width: 100%;
+        max-width: 220px;
+    }
+
+    .filter-scroll {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .filter-scroll {
+        gap: 0.75rem;
+        flex-wrap: wrap;
+    }
+
+    .filter-scroll .btn-filter {
+        min-width: 130px;
+        padding: 0.55rem 1rem;
+        font-size: 0.9rem;
+        flex: 1 1 auto;
+    }
+
+    .stats-bar .col-3 {
+        border-right: none !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .stats-bar .col-3:last-child {
+        border-bottom: none !important;
+        margin-bottom: 0;
+    }
+
+    .rank-row {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.75rem;
+    }
+
+    .rank-row .text-end {
+        text-align: left !important;
+    }
+
+    .perk-item {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.75rem;
+        text-align: left;
+    }
+
+    .perk-item .badge {
+        align-self: flex-start;
+    }
+}

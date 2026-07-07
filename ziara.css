@@ -1,0 +1,196 @@
+:root {
+    --ziara-green: #2d7a32;
+    --ziara-bg: #f9fbfa;
+    --brown: #795548;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #f0f4f2 0%, #eef2f7 100%);
+    min-height: 100vh;
+}
+
+.fw-800 { font-weight: 800; }
+
+/* Navbar Styling */
+.logo-wrapper {
+    background-color: var(--ziara-green);
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.active-nav {
+    background-color: var(--ziara-green) !important;
+    color: white !important;
+    border-radius: 10px;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+.journey-card {
+    transition: transform 0.3s ease, border 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 20px !important;
+}
+
+.journey-card:hover {
+    transform: translateY(-10px);
+}
+
+.journey-card.selected {
+    border: 3px solid #0d6efd !important;
+}
+
+/* Card Headers with Diagonal Stripes */
+.card-header-pattern {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.local-pattern {
+    background: repeating-linear-gradient(45deg, #e8f5e9, #e8f5e9 10px, #ffffff 10px, #ffffff 20px);
+}
+
+.tourist-pattern {
+    background: repeating-linear-gradient(45deg, #e3f2fd, #e3f2fd 10px, #ffffff 10px, #ffffff 20px);
+}
+
+.icon-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.bg-green { background-color: #2e7d32; }
+.bg-blue { background-color: #0277bd; }
+
+.list-unstyled li {
+    padding: 8px 0;
+    font-size: 0.95rem;
+    color: #444;
+}
+
+input.form-control {
+    border-radius: 12px;
+    border: 1px solid #dee2e6;
+    padding: 15px;
+}
+
+#startBtn:not([disabled]) {
+    background-color: #f8f9fa;
+    color: #333 !important;
+    font-weight: 600;
+}
+
+/* Dark mode styles for ziara page */
+body.dark-mode {
+    background: #10131a;
+    color: #e6e8ed;
+}
+
+body.dark-mode .navbar,
+body.dark-mode .main-wrapper,
+body.dark-mode .card,
+body.dark-mode .perk-item,
+body.dark-mode .form-control,
+body.dark-mode .reward-bg,
+body.dark-mode .challenge-card {
+    background-color: #181c25 !important;
+    color: #e6e8ed !important;
+    border-color: #2a2f3b !important;
+}
+
+.dark-mode .navbar .nav-link {
+    color: rgba(230, 232, 237, 0.9) !important;
+}
+
+.dark-mode .navbar .nav-link.active-nav {
+    background-color: #2d7a32 !important;
+    color: #ffffff !important;
+}
+
+.dark-mode .card-header-pattern.local-pattern,
+.dark-mode .card-header-pattern.tourist-pattern {
+    background: #16212d;
+}
+
+.dark-mode .text-muted,
+.dark-mode .text-primary,
+.dark-mode .text-success,
+.dark-mode .text-brown {
+    color: #b0b6c1 !important;
+}
+
+.dark-mode .badge {
+    background-color: #2a2f3b !important;
+    color: #ffffff !important;
+}
+
+.dark-mode .badge.bg-success,
+.dark-mode .badge.bg-primary,
+.dark-mode .badge.bg-orange,
+.dark-mode .badge.bg-green-solid {
+    filter: brightness(1.1);
+}
+
+.dark-mode .progress-bar.bg-light-gray {
+    background-color: #3a3f4d !important;
+}
+
+.dark-mode .form-control {
+    background-color: #141824 !important;
+    border: 1px solid #343a45 !important;
+    color: #e6e8ed !important;
+}
+
+.dark-mode .btn-light {
+    background-color: #2a2f3b !important;
+    color: #e6e8ed !important;
+    border-color: #3c4454 !important;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode .navbar {
+    background-color: #1e1e1e !important;
+}
+
+.dark-mode .card {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border-color: #333;
+}
+
+.dark-mode .text-muted {
+    color: #cccccc !important;
+}
+
+.dark-mode .btn-link {
+    color: #ffffff;
+}
+
+.dark-mode .badge {
+    background-color: #333;
+    color: #ffffff;
+}
+
+.dark-mode .bi-sun {
+    color: #ffd700;
+    filter: drop-shadow(0 0 5px #ffd700);
+}

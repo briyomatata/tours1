@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karibu to Ziara | Design Kenya Travel App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="ziara.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <div class="logo-wrapper me-2">
+                    <i class="bi bi-palm-fill text-white fs-5"></i>
+                </div>
+                <div class="brand-text">
+                    <span class="fw-bold d-block lh-1">Ziara</span>
+                    <small class="text-muted">Explore Kenya</small>
+                </div>
+            </a>
+            
+            <div class="collapse navbar-collapse justify-content-center" id="navContent">
+               <ul class="navbar-nav gap-lg-3">
+                    <li class="nav-item"><a class="nav-link active-nav" href="ziara.html"><i class="bi bi-house-door me-2"></i>Home</a></li>
+                    <li class="nav-item"><a class="nav-link " href="index.html"><i class="bi bi-compass me-2"></i>Explore</a></li>
+                    <li class="nav-item"><a class="nav-link" href=""><i class="bi bi-passport me-2"></i>My Passport</a></li>
+                    <li class="nav-item"><a class="nav-link" href="lead.html"><i class="bi bi-award me-2"></i>Ziara Quest</a></li>
+                </ul>
+            </div>
+            
+            <div class="d-flex align-items-center gap-3">
+                <button class="btn btn-link text-dark p-0"><i class="bi bi-moon fs-5"></i></button>
+                <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-wrapper py-5">
+        <div class="container text-center">
+            <header class="mb-5">
+                <h1 class="display-4 fw-bold">Karibu to Ziara! 🇰🇪</h1>
+                <p class="text-muted fs-5">Your journey through Kenya's wonders begins here</p>
+            </header>
+
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-6 col-lg-4">
+                    <label class="form-label fw-semibold">What should we call you?</label>
+                    <input id="userNameInput" type="text" class="form-control form-control-lg text-center shadow-sm" placeholder="Enter your name">
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <h2 class="fw-bold">Choose Your Journey</h2>
+                <p class="text-muted">This will help us tailor your experience with personalized perks and content</p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-5 col-lg-4">
+                    <div class="card journey-card h-100 border-0 shadow-sm" onclick="selectJourney(this)">
+                        <div class="card-header-pattern local-pattern">
+                            <div class="icon-circle bg-green">
+                                <i class="bi bi-shield-check text-white fs-2"></i>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="fw-bold">Local Kenyan</h3>
+                            <span class="badge bg-success rounded-pill mb-3">Proud Kenyan Explorer</span>
+                            <ul class="list-unstyled text-start mt-3">
+                                <li><i class="bi bi-currency-dollar text-success me-2"></i> Citizen-rate park fees</li>
+                                <li><i class="bi bi-award text-success me-2"></i> Higher points multipliers</li>
+                                <li><i class="bi bi-people text-success me-2"></i> Access to local-only challenges</li>
+                                <li><i class="bi bi-geo-alt text-success me-2"></i> Community events & free park days</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-lg-4">
+                    <div class="card journey-card h-100 border-0 shadow-sm" onclick="selectJourney(this)">
+                        <div class="card-header-pattern tourist-pattern">
+                            <div class="icon-circle bg-blue">
+                                <i class="bi bi-globe text-white fs-2"></i>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="fw-bold">International Tourist</h3>
+                            <span class="badge bg-primary rounded-pill mb-3">Global Adventurer</span>
+                            <ul class="list-unstyled text-start mt-3">
+                                <li><i class="bi bi-info-circle text-primary me-2"></i> Visa & embassy information</li>
+                                <li><i class="bi bi-cash-stack text-primary me-2"></i> Multi-currency pricing & converter</li>
+                                <li><i class="bi bi-airplane text-primary me-2"></i> Airport transfer recommendations</li>
+                                <li><i class="bi bi-tree text-primary me-2"></i> Sustainability travel tips</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-5">
+                <button class="btn btn-light btn-lg px-5 py-3 shadow-sm text-muted rounded-4" id="startBtn" disabled>
+                    Start My Journey <i class="bi bi-chevron-right ms-2"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

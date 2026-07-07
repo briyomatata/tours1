@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ziara | Explore Kenya</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <div class="logo-wrapper me-2">
+                    <i class="bi bi-palm-fill text-white fs-5"></i>
+                </div>
+                <div class="brand-text">
+                    <span class="fw-bold d-block lh-1">Ziara</span>
+                    <small class="text-muted">Explore Kenya</small>
+                </div>
+            </a>
+            
+            <div class="collapse navbar-collapse justify-content-center" id="navContent">
+              <ul class="navbar-nav gap-lg-3">
+                    <li class="nav-item"><a class="nav-link active-nav" href="ziara.html"><i class="bi bi-house-door me-2"></i>Home</a></li>
+                    <li class="nav-item"><a class="nav-link " href="index.html"><i class="bi bi-compass me-2"></i>Explore</a></li>
+                    <li class="nav-item"><a class="nav-link" href=""><i class="bi bi-passport me-2"></i>My Passport</a></li>
+                    <li class="nav-item"><a class="nav-link" href="lead.html"><i class="bi bi-award me-2"></i>Ziara Quest</a></li>
+                </ul>
+            </div>
+            
+            <div class="d-flex align-items-center gap-3">
+                <button class="btn btn-link text-dark p-0"><i class="bi bi-moon fs-5"></i></button>
+                <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-5">
+        <div class="row mb-5">
+            <div class="col-lg-8">
+                <h1 class="display-4 fw-800 mb-2">Explore Kenya</h1>
+                <p class="text-secondary fs-5">Discover national parks, lakes, mountains, coastal paradises, and hidden gems.</p>
+            </div>
+        </div>
+
+        <div class="d-flex flex-wrap justify-content-between align-items-center mb-5 gap-3">
+            <div class="filter-scroll d-flex gap-2">
+                <button type="button" class="btn btn-filter active" data-filter="all">All Destinations</button>
+                <button type="button" class="btn btn-filter" data-filter="national-park">National Park</button>
+                <button type="button" class="btn btn-filter" data-filter="mountain-hill">Mountain & Hill</button>
+                <button type="button" class="btn btn-filter" data-filter="lake-river">Lake & River</button>
+                <button type="button" class="btn btn-filter" data-filter="coast-island">Coast & Island</button>
+            </div>
+            
+            <div class="view-toggle d-inline-flex p-1 bg-white border rounded-pill">
+                <button type="button" class="btn btn-sm btn-success rounded-pill px-3"><i class="bi bi-grid-fill me-2"></i>Grid</button>
+                <button type="button" class="btn btn-sm text-muted rounded-pill px-3"><i class="bi bi-map me-2"></i>Map</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-category="national-park">
+                <div class="card custom-card">
+                    <div class="image-container">
+                        <span class="badge-overlay">National Park</span>
+                        <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&q=80&w=600" 
+                             class="card-img-top" alt="Wildlife">
+                    </div>
+
+                    <div class="card-body p-4">
+                        <h2 class="card-title mb-2">Masai Mara National Reserve</h2>
+                        <p class="card-description mb-3">
+                            World-renowned for the Great Migration and incredible wildlife viewing.
+                        </p>
+                        
+                        <div class="location-info mb-3">
+                            <i class="bi bi-map me-1"></i> Narok County
+                        </div>
+
+                        <div class="tag-container mb-4">
+                            <span class="activity-tag">Game Drive</span>
+                            <span class="activity-tag">Hot Air Balloon Safari</span>
+                            <span class="activity-tag">Cultural Visits</span>
+                        </div>
+
+                        <hr class="divider">
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="price-box">
+                                <span class="icon-dollar">$</span>
+                                <span class="amount">80</span>
+                                <span class="currency">USD</span>
+                            </div>
+                            <button class="btn btn-visited">Mark Visited</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-category="lake-river">
+                <div class="card custom-card">
+                    <div class="image-container">
+                        <span class="badge-overlay">Lakes & Rivers</span>
+                        <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&q=80&w=600" 
+                             class="card-img-top" alt="Wildlife">
+                    </div>
+
+                    <div class="card-body p-4">
+                        <h2 class="card-title mb-2">Lake Nakuru National Park</h2>
+                        <p class="card-description mb-3">
+                          Famous for millions of flamingos and diverse wildlife including rhinos.
+                        </p>
+                        
+                        <div class="location-info mb-3">
+                            <i class="bi bi-map me-1"></i> Nakuru County
+                        </div>
+
+                        <div class="tag-container mb-4">
+                            <span class="activity-tag">Bird Watching</span>
+                            <span class="activity-tag">Game Drive</span>
+                            <span class="activity-tag">Photography</span>
+                        </div>
+
+                        <hr class="divider">
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="price-box">
+                                <span class="icon-dollar">$</span>
+                                <span class="amount">60</span>
+                                <span class="currency">USD</span>
+                            </div>
+                            <button class="btn btn-visited">Mark Visited</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-category="mountain-hill">
+                <div class="card custom-card">
+                    <div class="image-container">
+                        <span class="badge-overlay">Mountain & Hill</span>
+                        <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&q=80&w=600" 
+                             class="card-img-top" alt="Wildlife">
+                    </div>
+
+                    <div class="card-body p-4">
+                        <h2 class="card-title mb-2">Mount Kenya</h2>
+                        <p class="card-description mb-3">
+                            Africa's second-highest mountain with diverse ecosystems and climbing routes.
+                        </p>
+                        
+                        <div class="location-info mb-3">
+                            <i class="bi bi-map me-1"></i> Central Kenya
+                        </div>
+
+                        <div class="tag-container mb-4">
+                            <span class="activity-tag">Mountain Climbing</span>
+                            <span class="activity-tag">Hiking</span>
+                            <span class="activity-tag">Wildlife Viewing</span>
+                        </div>
+
+                        <hr class="divider">
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="price-box">
+                                <span class="icon-dollar">$</span>
+                                <span class="amount">52</span>
+                                <span class="currency">USD</span>
+                            </div>
+                            <button class="btn btn-visited">Mark Visited</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-category="coast-island">
+                <div class="card custom-card">
+                    <div class="image-container">
+                        <span class="badge-overlay">Coast & Beaches</span>
+                        <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&q=80&w=600" 
+                             class="card-img-top" alt="Wildlife">
+                    </div>
+
+                    <div class="card-body p-4">
+                        <h2 class="card-title mb-2">Diani Beach</h2>
+                        <p class="card-description mb-3">
+                           Pristine white sand beach with crystal-clear waters and coral reefs
+                        </p>
+                        
+                        <div class="location-info mb-3">
+                            <i class="bi bi-map me-1"></i> Kwale County
+                        </div>
+
+                        <div class="tag-container mb-4">
+                            <span class="activity-tag">Swimming</span>
+                            <span class="activity-tag">Snorkeling</span>
+                            <span class="activity-tag">Kitesurfing</span>
+                        </div>
+
+                        <hr class="divider">
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="price-box">
+                                <span class="icon-dollar">Free Entry</span>
+                                <!-- <span class="amount">80</span>
+                                <span class="currency">USD</span> -->
+                            </div>
+                            <button class="btn btn-visited">Mark Visited</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-category="national-park">
+                <div class="card custom-card">
+                    <div class="image-container">
+                        <span class="badge-overlay">National Park</span>
+                        <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&q=80&w=600" 
+                             class="card-img-top" alt="Wildlife">
+                    </div>
+
+                    <div class="card-body p-4">
+                        <h2 class="card-title mb-2">Amboseli National Park</h2>
+                        <p class="card-description mb-3">
+                           Best views of Mount Kilimanjaro and large elephant herds.
+                        </p>
+                        
+                        <div class="location-info mb-3">
+                            <i class="bi bi-map me-1"></i> Kajiado County
+                        </div>
+
+                        <div class="tag-container mb-4">
+                            <span class="activity-tag">Game Drive</span>
+                            <span class="activity-tag">Photography</span>
+                            <span class="activity-tag">Nature Walks</span>
+                        </div>
+
+                        <hr class="divider">
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="price-box">
+                                <span class="icon-dollar">$</span>
+                                <span class="amount">60</span>
+                                <span class="currency">USD</span>
+                            </div>
+                            <button class="btn btn-visited">Mark Visited</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-category="national-park">
+                <div class="card custom-card">
+                    <div class="image-container">
+                        <span class="badge-overlay">National Park</span>
+                        <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&q=80&w=600" 
+                             class="card-img-top" alt="Wildlife">
+                    </div>
+
+                    <div class="card-body p-4">
+                        <h2 class="card-title mb-2">Nairobi National Reserve</h2>
+                        <p class="card-description mb-3">
+                          Unique wildlife park on the doorstep of the capital city.
+                        </p>
+                        
+                        <div class="location-info mb-3">
+                            <i class="bi bi-map me-1"></i> Nairobi County
+                        </div>
+
+                        <div class="tag-container mb-4">
+                            <span class="activity-tag">Game Drive</span>
+                            <span class="activity-tag">Picnicking</span>
+                            <span class="activity-tag">Bird Watching</span>
+                        </div>
+
+                        <hr class="divider">
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="price-box">
+                                <span class="icon-dollar">$</span>
+                                <span class="amount">43</span>
+                                <span class="currency">USD</span>
+                            </div>
+                            <button class="btn btn-visited">Mark Visited</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-category="national-park">
+                <div class="card custom-card">
+                    <div class="image-container">
+                        <span class="badge-overlay">National Park</span>
+                        <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&q=80&w=600" 
+                             class="card-img-top" alt="Wildlife">
+                    </div>
+
+                    <div class="card-body p-4">
+                        <h2 class="card-title mb-2">Tsavo National Reserve</h2>
+                        <p class="card-description mb-3">
+                           Kenya's largest national park, split into Tsavo East and West.
+                        </p>
+                        
+                        <div class="location-info mb-3">
+                            <i class="bi bi-map me-1"></i> Taita-Taveta County
+                        </div>
+
+                        <div class="tag-container mb-4">
+                            <span class="activity-tag">Game Drive</span>
+                            <span class="activity-tag">Bird Watching</span>
+                            <span class="activity-tag">Rock Climbing</span>
+                        </div>
+
+                        <hr class="divider">
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="price-box">
+                                <span class="icon-dollar">$</span>
+                                <span class="amount">75</span>
+                                <span class="currency">USD</span>
+                            </div>
+                            <button class="btn btn-visited">Mark Visited</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-category="hidden-gem">
+                <div class="card custom-card">
+                    <div class="image-container">
+                        <span class="badge-overlay">Hidden Gem</span>
+                        <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&q=80&w=600" 
+                             class="card-img-top" alt="Wildlife">
+                    </div>
+
+                    <div class="card-body p-4">
+                        <h2 class="card-title mb-2">Hell's Gate National Park</h2>
+                        <p class="card-description mb-3">
+                           Stunning gorges and geothermal features where you can walk and cycle.
+                        </p>
+                        
+                        <div class="location-info mb-3">
+                            <i class="bi bi-map me-1"></i> Nakuru County
+                        </div>
+
+                        <div class="tag-container mb-4">
+                            <span class="activity-tag">Cycling</span>
+                            <span class="activity-tag">Rock Climbing</span>
+                            <span class="activity-tag">Camping</span>
+                        </div>
+
+                        <hr class="divider">
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="price-box">
+                                <span class="icon-dollar">$</span>
+                                <span class="amount">26</span>
+                                <span class="currency">USD</span>
+                            </div>
+                            <button class="btn btn-visited">Mark Visited</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="text-center mt-5 mb-5">
+            <p class="text-muted small">Showing 8 destinations</p>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

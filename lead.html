@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ziara Quest | Challenges & Leaderboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <div class="logo-wrapper me-2">
+                    <i class="bi bi-palm-fill text-white fs-5"></i>
+                </div>
+                <div class="brand-text">
+                    <span class="fw-bold d-block lh-1">Ziara</span>
+                    <small class="text-muted">Explore Kenya</small>
+                </div>
+            </a>
+            
+            <div class="collapse navbar-collapse justify-content-center" id="navContent">
+                <ul class="navbar-nav gap-lg-3">
+                    <li class="nav-item"><a class="nav-link active-nav" href="ziara.html"><i class="bi bi-house-door me-2"></i>Home</a></li>
+                    <li class="nav-item"><a class="nav-link " href="index.html"><i class="bi bi-compass me-2"></i>Explore</a></li>
+                    <li class="nav-item"><a class="nav-link" href=""><i class="bi bi-passport me-2"></i>My Passport</a></li>
+                    <li class="nav-item"><a class="nav-link" href="lead.html"><i class="bi bi-award me-2"></i>Ziara Quest</a></li>
+                </ul>
+            </div>
+            
+            <div class="d-flex align-items-center gap-3">
+                <button class="btn btn-link text-dark p-0"><i class="bi bi-moon fs-5"></i></button>
+                <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-5">
+        <div class="text-center mb-5">
+            <span class="badge badge-orange mb-3"><i class="bi bi-lightning-charge-fill me-1"></i> Ziara Quest</span>
+            <h1 class="display-3 fw-800 mb-2">Challenge Yourself</h1>
+            <p class="text-muted fs-5">Complete challenges, earn points, and climb the leaderboard</p>
+        </div>
+
+        <div class="stats-bar mb-5">
+            <div class="row text-white text-center py-4 g-0">
+                <div class="col-3 border-end border-white-50">
+                    <h2 class="fw-bold mb-0">0</h2>
+                    <small class="opacity-75">Total Points</small>
+                </div>
+                <div class="col-3 border-end border-white-50">
+                    <h2 class="fw-bold mb-0">0</h2>
+                    <small class="opacity-75">Places Visited</small>
+                </div>
+                <div class="col-3 border-end border-white-50">
+                    <h2 class="fw-bold mb-0">#4</h2>
+                    <small class="opacity-75">Your Rank</small>
+                </div>
+                <div class="col-3">
+                    <h2 class="fw-bold mb-0">1.0x</h2>
+                    <small class="opacity-75">Points Multiplier</small>
+                </div>
+            </div>
+        </div>
+
+        <section class="mb-5">
+            <h3 class="fw-bold mb-4 d-flex align-items-center">
+                <div class="icon-indicator me-2"></div> Active Challenges
+            </h3>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card challenge-card h-100 border-0 shadow-sm p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="challenge-icon bg-orange-soft text-orange me-3"><i class="bi bi-trophy"></i></div>
+                            <h5 class="fw-bold mb-0">Safari Big Five</h5>
+                        </div>
+                        <p class="text-muted small">Visit all major parks with the Big Five</p>
+                        <div class="mt-auto">
+                            <div class="d-flex justify-content-between mb-1 small">
+                                <span class="fw-bold">0 / 5</span>
+                                <span class="text-muted">0%</span>
+                            </div>
+                            <div class="progress mb-3" style="height: 6px;">
+                                <div class="progress-bar bg-light-gray" style="width: 0%"></div>
+                            </div>
+                            <span class="text-orange fw-bold small"><i class="bi bi-award me-1"></i> 500 pts</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card challenge-card h-100 border-0 shadow-sm p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="challenge-icon bg-blue-soft text-primary me-3"><i class="bi bi-compass"></i></div>
+                            <h5 class="fw-bold mb-0">Coastal Explorer</h5>
+                        </div>
+                        <p class="text-muted small">Discover all coastal destinations</p>
+                        <div class="mt-auto">
+                            <div class="d-flex justify-content-between mb-1 small">
+                                <span class="fw-bold">0 / 4</span>
+                                <span class="text-muted">0%</span>
+                            </div>
+                            <div class="progress mb-3" style="height: 6px;">
+                                <div class="progress-bar bg-light-gray" style="width: 0%"></div>
+                            </div>
+                            <span class="text-orange fw-bold small"><i class="bi bi-award me-1"></i> 300 pts</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card challenge-card h-100 border-0 shadow-sm p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="challenge-icon bg-brown-soft text-brown me-3"><i class="bi bi-pin-map"></i></div>
+                            <h5 class="fw-bold mb-0">Mountain Climber</h5>
+                        </div>
+                        <p class="text-muted small">Conquer Kenya's highest peaks</p>
+                        <div class="mt-auto">
+                            <div class="d-flex justify-content-between mb-1 small">
+                                <span class="fw-bold">0 / 3</span>
+                                <span class="text-muted">0%</span>
+                            </div>
+                            <div class="progress mb-3" style="height: 6px;">
+                                <div class="progress-bar bg-light-gray" style="width: 0%"></div>
+                            </div>
+                            <span class="text-orange fw-bold small"><i class="bi bi-award me-1"></i> 400 pts</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="row g-4">
+            <div class="col-lg-7">
+                <div class="card border-0 shadow-sm p-4 rounded-4 h-100">
+                    <h4 class="fw-bold mb-1"><i class="bi bi-globe2 text-primary me-2"></i> Global Adventurers</h4>
+                    <p class="text-muted small mb-4">Top performers this month</p>
+                    
+                    <div class="leaderboard-container">
+                        <div class="rank-row d-flex align-items-center p-3 mb-2 rounded-3 bg-light-hover">
+                            <div class="rank-badge gold me-3"><i class="bi bi-trophy-fill"></i></div>
+                            <div class="user-avatar me-3">🌍</div>
+                            <div class="flex-grow-1">
+                                <h6 class="fw-bold mb-0">Sarah Johnson</h6>
+                                <small class="text-muted">38 places visited</small>
+                            </div>
+                            <div class="text-end">
+                                <span class="fw-bold text-primary">3800</span><br><small class="text-muted">points</small>
+                            </div>
+                        </div>
+                        <div class="rank-row d-flex align-items-center p-3 mb-2 rounded-3 border-user shadow-sm">
+                            <div class="rank-num me-3">4</div>
+                            <div class="user-avatar me-3">👤</div>
+                            <div class="flex-grow-1">
+                                <h6 class="fw-bold mb-0">Explorer <span class="badge bg-orange ms-1">You</span></h6>
+                                <small class="text-muted">0 places visited</small>
+                            </div>
+                            <div class="text-end">
+                                <span class="fw-bold text-primary">0</span><br><small class="text-muted">points</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-5">
+                <div class="card border-0 shadow-sm p-4 rounded-4 h-100 reward-bg">
+                    <h4 class="fw-bold mb-1"><i class="bi bi-award text-orange me-2"></i> Rewards & Perks</h4>
+                    <p class="text-muted small mb-4">Redeem your points</p>
+                    
+                    <div class="perk-list d-flex flex-column gap-3">
+                        <div class="perk-item p-3 bg-white rounded-3 shadow-sm d-flex justify-content-between align-items-center">
+                            <div>
+                                <h6 class="fw-bold mb-0">10% Hotel Discount</h6>
+                                <small class="text-muted small">Partner hotels nationwide</small>
+                            </div>
+                            <span class="badge bg-green-solid">1000 pts</span>
+                        </div>
+                        <div class="perk-item p-3 bg-white rounded-3 shadow-sm d-flex justify-content-between align-items-center">
+                            <div>
+                                <h6 class="fw-bold mb-0">Free Park Entry</h6>
+                                <small class="text-muted small">One-day pass to any KWS park</small>
+                            </div>
+                            <span class="badge bg-green-solid">1500 pts</span>
+                        </div>
+
+                         <div class="perk-item p-3 bg-white rounded-3 shadow-sm d-flex justify-content-between align-items-center">
+                            <div>
+                                <h6 class="fw-bold mb-0">Free Park Entry</h6>
+                                <small class="text-muted small">One-day pass to any KWS park</small>
+                            </div>
+                            <span class="badge bg-green-solid">1500 pts</span>
+                        </div>
+
+                         <div class="perk-item p-3 bg-white rounded-3 shadow-sm d-flex justify-content-between align-items-center">
+                            <div>
+                                <h6 class="fw-bold mb-0">Free Park Entry</h6>
+                                <small class="text-muted small">One-day pass to any KWS park</small>
+                            </div>
+                            <span class="badge bg-green-solid">1500 pts</span>
+                        </div>
+
+                         <div class="perk-item p-3 bg-white rounded-3 shadow-sm d-flex justify-content-between align-items-center">
+                            <div>
+                                <h6 class="fw-bold mb-0">Free Park Entry</h6>
+                                <small class="text-muted small">One-day pass to any KWS park</small>
+                            </div>
+                            <span class="badge bg-green-solid">1500 pts</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

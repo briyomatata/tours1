@@ -1,0 +1,428 @@
+:root {
+    --ziara-green: #2d7a32;
+    --ziara-bg: #f9fbfa;
+    --brown: #795548;
+}
+
+body {
+    background-color: var(--ziara-bg);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.fw-800 { font-weight: 800; }
+
+/* Navbar Styling */
+.logo-wrapper {
+    background-color: var(--ziara-green);
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.active-nav {
+    background-color: var(--ziara-green) !important;
+    color: white !important;
+    border-radius: 10px;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+.navbar-nav .nav-link {
+    color: #222 !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--ziara-green) !important;
+}
+
+.navbar-collapse {
+    background-color: #ffffff;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #ffffff;
+        z-index: 1000;
+        padding: 1rem;
+        border-top: 1px solid rgba(0,0,0,0.08);
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .navbar-nav .nav-link {
+        width: 100%;
+        padding: 0.6rem 1rem;
+        border-radius: 0.75rem;
+    }
+}
+
+body.dark-mode .navbar-collapse {
+    background-color: #1e1e1e !important;
+}
+
+body.dark-mode .navbar-nav .nav-link {
+    color: #e6e8ed !important;
+}
+
+body.dark-mode .navbar-nav .nav-link:hover {
+    color: #ffffff !important;
+}
+
+body.dark-mode .navbar-toggler-icon {
+    filter: invert(1);
+}
+
+/* Filters */
+.btn-filter {
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 8px 18px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.btn-filter.active {
+    background-color: var(--ziara-green);
+    color: white;
+    border-color: var(--ziara-green);
+}
+
+/* Safari Cards */
+.safari-card {
+    border-radius: 24px !important;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+    transition: transform 0.3s ease;
+}
+
+.safari-card:hover {
+    transform: translateY(-10px);
+}
+
+.img-container {
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.category-label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.bg-brown { background-color: var(--brown); }
+
+.location-tag {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.tag-pill {
+    background-color: #f0f2f1;
+    color: #444;
+    font-weight: 500;
+    margin-right: 5px;
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+
+.btn-visited {
+    background-color: var(--ziara-green);
+    border: none;
+    transition: opacity 0.2s;
+}
+
+.btn-visited:hover {
+    background-color: #1e5421;
+}
+
+/* Responsive adjustment for filters */
+.filter-scroll {
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.filter-scroll::-webkit-scrollbar { display: none; }
+
+/* General Layout */
+body {
+    background-color: #f3f4f6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.custom-card {
+    border: none;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    max-width: 420px;
+    width: 100%;
+}
+
+/* Image Section */
+.image-container {
+    position: relative;
+}
+
+.badge-overlay {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background-color: #2d7a32;
+    color: white;
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+/* Text Content */
+.card-title {
+    font-weight: 800;
+    font-size: 1.45rem;
+    color: #111;
+}
+
+.card-description {
+    color: #6c757d;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.location-info {
+    color: #6c757d;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Activity Tags */
+.activity-tag {
+    background-color: #f1f3f5;
+    color: #333;
+    border-radius: 8px;
+    padding: 6px 14px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    display: inline-block;
+    margin: 0 4px 8px 0;
+}
+
+.divider {
+    opacity: 0.1;
+    margin-top: 0;
+}
+
+/* Price & Button */
+.icon-dollar {
+    color: #ff9800;
+    font-weight: 700;
+    margin-right: 2px;
+}
+
+.amount {
+    font-weight: 800;
+    font-size: 1.25rem;
+    color: #222;
+}
+
+.currency {
+    color: #888;
+    font-size: 0.85rem;
+    margin-left: 4px;
+}
+
+.btn-visited {
+    background-color: #2d7a32;
+    color: white;
+    border-radius: 12px;
+    padding: 10px 24px;
+    font-weight: 600;
+    border: none;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-visited:hover {
+    background-color: #235e26;
+    color: white;
+    transform: translateY(-1px);
+}
+
+/* Make card containers responsive */
+.container.vh-100 {
+    height: auto !important;
+}
+
+/* Header Badge */
+.badge-orange {
+    background: linear-gradient(90deg, #ff8a65, #f4511e);
+    padding: 8px 16px;
+    font-size: 0.9rem;
+}
+
+/* Challenge Cards */
+.challenge-icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.bg-orange-soft { background-color: #fff3e0; }
+.text-orange { color: #f4511e; }
+.bg-blue-soft { background-color: #e1f5fe; }
+.bg-brown-soft { background-color: #efebe9; }
+.text-brown { color: #5d4037; }
+.bg-light-gray { background-color: #e9ecef; }
+
+.icon-indicator {
+    width: 20px;
+    height: 20px;
+    border: 4px solid #ff9800;
+    border-radius: 50%;
+}
+
+.bg-green-solid {
+    background-color: #2d7a32;
+    color: white;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #e6e8ed;
+}
+
+body.dark-mode .navbar {
+    background-color: #1e1e1e !important;
+}
+
+body.dark-mode .card,
+body.dark-mode .custom-card,
+body.dark-mode .challenge-card,
+body.dark-mode .reward-bg,
+body.dark-mode .filter-scroll,
+body.dark-mode .view-toggle,
+body.dark-mode .user-avatar,
+body.dark-mode .stats-bar {
+    background-color: #1e1e1e !important;
+    color: #e6e8ed !important;
+    border-color: #333 !important;
+}
+
+body.dark-mode .card-title,
+body.dark-mode .card-description,
+body.dark-mode .location-info,
+body.dark-mode .activity-tag,
+body.dark-mode .amount,
+body.dark-mode .currency,
+body.dark-mode .text-muted,
+body.dark-mode .text-primary,
+body.dark-mode .text-success,
+body.dark-mode .text-orange,
+body.dark-mode .text-brown {
+    color: #cccccc !important;
+}
+
+body.dark-mode .activity-tag {
+    background-color: #232830;
+}
+
+body.dark-mode .badge-overlay {
+    background-color: #275b2e;
+}
+
+body.dark-mode .btn-filter {
+    background-color: #232830;
+    color: #e6e8ed;
+    border-color: #333;
+}
+
+body.dark-mode .btn-filter.active {
+    background-color: #2d7a32;
+    color: #ffffff;
+}
+
+body.dark-mode .btn-visited {
+    background-color: #2d7a32 !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode .btn-link {
+    color: #ffffff !important;
+}
+
+body.dark-mode .badge,
+body.dark-mode .bg-light-gray,
+body.dark-mode .bg-blue-soft,
+body.dark-mode .bg-orange-soft,
+body.dark-mode .bg-brown-soft,
+body.dark-mode .bg-green-solid {
+    background-color: #232830 !important;
+    color: #e6e8ed !important;
+}
+
+body.dark-mode .bi-sun {
+    color: #ffd700;
+    filter: drop-shadow(0 0 5px #ffd700);
+}
+
+body.dark-mode .perk-item {
+    background-color: #2e2e2e !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode .perk-item .text-muted {
+    color: #cccccc !important;
+}
+
+body.dark-mode .badge.bg-green-solid {
+    background: linear-gradient(45deg, #4caf50, #2e7d32) !important;
+    color: white !important;
+    border: 2px solid #66bb6a !important;
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.5) !important;
+}
+
+/* Stats Bar */
+.stats-bar {
+    background: linear-gradient(90deg, #2d7a32 0%, #0288d1 100%);
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+}
+
+.stats-bar::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: repeating-linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0.1) 15px,
+        transparent 15px,
+        transparent 30px
+    );
+}

@@ -1,0 +1,157 @@
+:root {
+    --ziara-green: #2d7a32;
+    --ziara-orange: #ff5722;
+    --ziara-blue: #0288d1;
+    --soft-bg: #f8f9fa;
+}
+
+body {
+    background-color: var(--soft-bg);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #212529;
+}
+
+.fw-800 { font-weight: 800; }
+
+/* Logo & Nav */
+.logo-box {
+    background-color: var(--ziara-green);
+    padding: 6px;
+    border-radius: 8px;
+}
+
+.btn-quest-nav {
+    background-color: var(--ziara-green);
+    color: white !important;
+    border-radius: 8px;
+    padding: 8px 16px !important;
+    font-weight: 600;
+}
+
+/* Header Badge */
+.badge-orange {
+    background: linear-gradient(90deg, #ff8a65, #f4511e);
+    padding: 8px 16px;
+    font-size: 0.9rem;
+}
+
+/* Stats Bar - Diagonal Stripes matching the doc */
+.stats-bar {
+    background: linear-gradient(90deg, #2d7a32 0%, #0288d1 100%);
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+}
+
+.stats-bar::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: repeating-linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0.1) 15px,
+        transparent 15px,
+        transparent 30px
+    );
+}
+
+/* Challenge Cards */
+.challenge-icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.bg-orange-soft { background-color: #fff3e0; }
+.text-orange { color: #f4511e; }
+.bg-blue-soft { background-color: #e1f5fe; }
+.bg-brown-soft { background-color: #efebe9; }
+.text-brown { color: #5d4037; }
+.bg-light-gray { background-color: #e9ecef; }
+
+.icon-indicator {
+    width: 20px;
+    height: 20px;
+    border: 4px solid #ff9800;
+    border-radius: 50%;
+}
+
+/* Leaderboard & Rewards */
+.bg-light-hover:hover {
+    background-color: #f1f3f5;
+}
+
+.border-user {
+    border: 2px solid var(--ziara-blue) !important;
+}
+
+.rank-badge.gold {
+    color: #ffc107;
+    font-size: 1.2rem;
+}
+
+.user-avatar {
+    background: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.reward-bg {
+    background-color: #fbe9e7 !important;
+}
+
+.bg-green-solid {
+    background-color: #2d7a32;
+}
+
+/* Dark mode styles for lead page */
+body.dark-mode {
+    background-color: #121212;
+    color: #e6e8ed;
+}
+
+body.dark-mode .navbar,
+body.dark-mode .card,
+body.dark-mode .challenge-card,
+body.dark-mode .reward-bg,
+body.dark-mode .bg-light-gray,
+body.dark-mode .bg-blue-soft,
+body.dark-mode .bg-orange-soft,
+body.dark-mode .bg-brown-soft,
+body.dark-mode .user-avatar {
+    background-color: #181c25 !important;
+    color: #e6e8ed !important;
+    border-color: #2a2f3b !important;
+}
+
+body.dark-mode .text-muted,
+body.dark-mode .text-primary,
+body.dark-mode .text-orange,
+body.dark-mode .text-brown,
+body.dark-mode .badge-orange,
+body.dark-mode .btn-quest-nav {
+    color: #b0b6c1 !important;
+}
+
+body.dark-mode .badge-orange {
+    background-color: #2d7a32 !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode .btn-quest-nav {
+    background-color: #2d7a32 !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode .progress-bar.bg-light-gray {
+    background-color: #3a3f4d !important;
+}
